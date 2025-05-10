@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
 package com.ebao.graphconnector.controller;
 
 import com.ebao.graphconnector.util.TeamsHelper;
@@ -18,7 +15,6 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
-
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
