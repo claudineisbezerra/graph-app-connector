@@ -285,7 +285,7 @@ When the user navigates to `/call_graph`, the application creates an instance of
 The Oauth2AuthorizedClient must be prepared with the correct scopes (see `application.yml` and the following **Scopes** section). It is used to surface the access token and place it in the Authorization header of GraphServiceClient requests.
 
 ```java
-//see SampleController.java
+//see TeamsController.java
 @GetMapping(path = "/call_graph")
 public String callGraph(@RegisteredOAuth2AuthorizedClient("graph") OAuth2AuthorizedClient graphAuthorizedClient) {
   // See the TeamsUtilities.graphUserProperties() method for the full example of the following operation:

@@ -30,7 +30,7 @@ public class TeamsUtilities {
 
     /**
      * Take a subset of ID Token claims and put them into KV pairs for UI to display.
-     * @param principal OidcUser (see SampleController for details)
+     * @param principal OidcUser (see TeamsController for details)
      * @return Map of filteredClaims
      */
     public static Map<String,String> filterClaims(OidcUser principal) {
@@ -48,7 +48,7 @@ public class TeamsUtilities {
 
     /**
      * Take a few of the User properties obtained from the graph /me endpoint and put them into KV pairs for UI to display.
-     * @param graphAuthorizedClient OAuth2AuthorizedClient created by AAD Boot starter. See the SampleController class for details.
+     * @param graphAuthorizedClient OAuth2AuthorizedClient created by AAD Boot starter. See the TeamsController class for details.
      * @return Map<String,String> select Key-Values from User object
      */
     public static Map<String, String> graphUserProperties(OAuth2AuthorizedClient graphAuthorizedClient) {

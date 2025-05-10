@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Controller
-public class SampleController {
+public class TeamsController {
 
     /**
      * Add HTML partial fragment from /templates/content folder to request and serve base html
@@ -115,7 +115,7 @@ public class SampleController {
             model.addAttribute("status", "Error retrieving team properties: " + e.getMessage());
         }
 
-        System.out.println("SampleController: Retrieved /get_team_properties > model = " + model);
+        System.out.println("TeamsController: Retrieved /get_team_properties > model = " + model);
         return hydrateUI(model, "team_properties_status");
     }
 
