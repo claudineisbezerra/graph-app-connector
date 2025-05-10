@@ -1,0 +1,44 @@
+<div class="card">
+    <h5 class="card-header bg-primary">
+        Call Graph /me/joinedTeams Endpoint
+    </h5>
+    <div class="card-body">
+        <p class="card-text">
+            <th:block th:if="${status}">
+                <strong>Status: </strong>
+                <th:block th:text="${status}"></th:block>
+            </th:block>
+            <br>
+            <br>
+
+            <th:block th:if="${teamId}">
+                <strong>Team INFO: </strong>
+            </th:block>
+            <br>
+            <th:block th:if="${teamId}">
+                <strong>Team Id: </strong>
+                <th:block th:text="${teamId}"></th:block>
+            </th:block>
+            <br>
+            <th:block th:if="${teamDisplayName}">
+                <strong>Team Display Name: </strong>
+                <th:block th:text="${teamDisplayName}"></th:block>
+            </th:block>
+            <br>
+            <th:block th:if="${teamChannels}">
+                <strong>Team Channels: </strong>
+                <th:block th:text="${teamChannels}"></th:block>
+            </th:block>
+            <br>
+            <th:block th:if="${teamGroup}">
+                <strong>Team Groups: </strong>
+                <th:block th:text="${teamGroup}"></th:block>
+            </th:block>
+            <br>
+            <br>
+
+            <a class="btn btn-success" href="/sign_in_status">Sign-in Status</a>
+            <a class="btn btn-success" href="/token_details">Token Details</a>
+        </p>
+    </div>
+</div>

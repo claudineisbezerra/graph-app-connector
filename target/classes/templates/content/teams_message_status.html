@@ -1,0 +1,41 @@
+<div class="card">
+    <h5 class="card-header bg-primary">
+        Call Graph /{team-id}/channels/{channel-id}/messages Endpoint
+    </h5>
+
+    <div class="card-body">
+        <p class="card-text">
+            <th:block th:if="${status}">
+                <strong>Status: </strong>
+                <th:block th:text="${status}"></th:block>
+            </th:block>
+            <br>
+            <br>
+
+            <th:block th:if="${teamId}">
+                <strong>Message sent to: </strong>
+            </th:block>
+            <br>
+            <th:block th:if="${teamId}">
+                <strong>Team Id: </strong>
+                <th:block th:text="${teamId}"></th:block>
+            </th:block>
+            <br>
+            <th:block th:if="${channelId}">
+                <strong>Channel id: </strong>
+                <th:block th:text="${channelId}"></th:block>
+            </th:block>
+            <br>
+            <th:block th:if="${message}">
+                <strong>Message: </strong>
+                <th:block th:text="${message}"></th:block>
+            </th:block>
+            <br>
+            <br>
+
+            <a class="btn btn-success" href="/sign_in_status">Sign-in Status</a>
+            <a class="btn btn-success" href="/token_details">Token Details</a>
+        </p>
+    </div>
+
+</div>

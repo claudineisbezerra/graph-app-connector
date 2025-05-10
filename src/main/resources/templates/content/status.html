@@ -1,0 +1,55 @@
+<div class="card">
+    <h5 class="card-header bg-primary">
+        <div sec:authorize="isAuthenticated()">
+            You're signed in!
+        </div>
+        <div sec:authorize="isAnonymous()">
+            You're not signed in.
+        </div>
+    </h5>
+    <div class="card-body">
+        <p class="card-text">
+            <div sec:authorize="isAuthenticated()">
+                <a class="btn btn-success" href="/token_details">ID Token Details</a>
+                <br><br>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+                <a class="btn btn-success" href="/call_graph">Get My User info</a>
+                <br><br>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+                <a class="btn btn-success" href="/get_team_properties?teamName=InsureMO%20Brazil">Get Team Properties</a>
+                <br><br>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+                <a class="btn btn-success" href="/get_channel_properties?teamName=InsureMO%20Brazil&channelName=Workflow%20Notifications">Get Channel Properties</a>
+                <br><br>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+                <a class="btn btn-success" href="/graph_send_teams_message">Send Teams Channel Message</a>
+                <br><br>
+            </div>
+
+            <div sec:authorize="isAnonymous()">
+                Use the button on the top right to sign in.
+                Attempts to go to a protected page, such as the
+                <br>
+                <a href="/token_details">ID Token Details page, or</a>
+                <br>
+                <a href="/call_graph">Get My User info page, or</a>
+                <br>
+                <a href="/get_team_properties?teamName=TeamNameExample"> Get Team Properties, or</a>
+                <br>
+                <a href="/get_channel_properties?teamName=TeamNameExample&channelName=ChannelNameExample">Get Channel Properties, or</a>
+                <br>
+                <a href="/graph_send_teams_message">Send Teams Channel Message endpoint</a>
+                <br>
+                will result in automatic redirection to Microsoft identity platform sign in page.
+            </div>
+        </p>
+    </div>
+</div>

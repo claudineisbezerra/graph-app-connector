@@ -1,0 +1,6 @@
+com\ebao\graphconnector\util\TeamsHelper.class
+com\ebao\graphconnector\util\TeamsUtilities.class
+com\ebao\graphconnector\controller\SampleController.class
+com\ebao\graphconnector\util\TeamsUtilities$GraphAuthenticationProvider.class
+com\ebao\graphconnector\GraphConnectorApplication.class
+com\ebao\graphconnector\config\SecurityConfig.class
